@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+body{
+    margin: 0;
+    font: 100 14px 'Calibri';
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input{
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    text-align: right;
+    font-size: 70px;
+}
+.input:focus{
+    outline-width: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn-calc{
+    background-color: azure;
+    width: 100%;
+    height: 80px;
+    outline:none;
+    border:none;
+    font-size:45px;
+    color:#1c191c;
+    border:0.01em black solid;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-calc:hover{
+    box-shadow: inset 0px 0px 80px 0px rgba(0,0,0,0.10);
+    transition: 0.2s;
+}
+.btn-calc:focus{
+    outline: none;
+}
+.btn-calc:active{
+    outline:none;
+    box-shadow: inset 0px 0px 80px 0px rgba(0,0,0,0.50);
+    transition: 0.3s;
+}
+.btn-calc-operations{
+    background-color: rgb(255, 181, 22);
+    width: 100%;
+    height: 80px;
+    outline:none;
+    border:none;
+    font-size:45px;
+    color:#ffffff;
+    border:0.01em black solid;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-calc-operations:hover{
+    box-shadow: inset 0px 0px 80px 0px rgba(0,0,0,0.10);
+    transition: 0.2s;
+}
+.btn-calc-operations:focus{
+    outline: none;
+}
+.btn-calc-operations:active{
+    outline:none;
+    box-shadow: inset 0px 0px 80px 0px rgba(0,0,0,0.50);
+    transition: 0.3s;
 }
